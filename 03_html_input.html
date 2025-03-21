@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input tags</title>
+</head>
+<body>
+    <form id="my_form" method="get">
+    ID: <input type="text" id="username-id" name="username" placeholder="hello" required> <br>
+    PW: <input type="password" id="password-pw" name="password">
+    <input type="hidden" name="my-hidden" value="서버로 전송할 값">
+    <input type="submit">
+    </form>
+
+    <br>
+    <!-- 폼 요소의 id 를 이용해서 레이블 태그를 붙이는 방법 -->
+<label for="my-input">NAME</label>
+<input type="text" id="my-input" maxlength="8" value="이름없음" autofocus>
+<input type="url" name="my-url" size="30" maxlength="100">
+    <!-- my_form.username / my_form.password-->
+    <input type="button" value="입력">
+    <input type="button" value="취소">
+</body>
+</html>

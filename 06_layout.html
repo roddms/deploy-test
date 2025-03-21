@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 연습</title>
+    <style>
+        .divs {
+            border:green dashed;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header" class="divs">
+        <img src="./data/rickandmorty.jpg" width="30px">    
+        <a href="./00_emmet.html" target="_blank">메뉴1</a>   
+        <a href="#자기소개">자기소개</a> 
+        <a href="www.naver.com" target="_blank">메뉴3</a>  
+        <form action="http://google.com/search?" target="_blank">
+            <input type="hidden" name="as_sitesearch" value="facebook.com">
+            <input type="search" name="q">
+            <input type="submit" value="검색">
+         </form>
+    </div>
+
+    <div id="main" class="divs">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint itaque placeat labore delectus illum ab optio dolores laudantium tempora corrupti, deleniti reiciendis debitis magnam doloribus quas sunt autem? Recusandae, illo.</p>
+
+        <p id="자기소개">김연지입니다. <br>좋아하는 메뉴는 쌀국수입니다. <img src="./data/monster.png" width="300px">여기까지</p>
+        - id로 페이지를 구분해서 위 메뉴와 연동되도록 만드는 항목
+    </div>
+
+    <div id="footer" class="divs">
+        김연지 atangi@naver.com
+    </div>
+</body>
+</html>

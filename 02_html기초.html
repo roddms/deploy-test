@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 창의 제목</title>
+    <style>
+
+        /* id - 고유한 태그에 적용할 속성
+        기본적으로는 한 html에 1개만 있어야 합니다.
+        id는 id라고 속성으로 쓰고 #으로 표현합니다. */
+        #test-id {
+            color:blueviolet;
+        }
+
+        /* html 태그에 공통적으로 쓸 수 있는 속성
+        class - 일괄적으로 적용할 속성에 대한 이름
+        css에서는 . 으로 class를 표기합니다. */
+        .fisa {
+            color : red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="fisa" onclick="alert('클릭함!')"> 제목1 </h1>
+    <h2> 제목2 </h2>
+    <h3 id="test-id" class="fisa"> 제목3 </h3>
+    <h4> 제목4 </h4>
+    <h5 class="fisa"> 제목5 </h5>
+    <h6> 제목6 </h6>
+    <h7 style="color : blue;"> 제목7 </h7> <!-- 잘못된 태그를 작성해도 화면에 보여주지 않습니다. -->
+    그냥 글자<br>
+    그냥 <b>글자에 강조</b>를 해볼게요.<br>
+    그냥 <strong>글자에 강조</strong>를 해볼게요.<br>
+    그냥 <i>글자에 기울기</i>를 해볼게요.<br>
+    그냥 <em>글자에 기울기</em>를 해볼게요.<br>
+    그냥 <b><em>글자에 기울기</em></b>를 해볼게요.<br>
+    <p class="fisa">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, saepe et sed mollitia voluptatem deleniti necessitatibus itaque quas! Odit aliquid eos provident itaque earum. Sed sapiente quia totam voluptatem harum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laudantium recusandae corrupti perspiciatis sequi qui, temporibus adipisci. Nesciunt, nobis? Repudiandae ex quod cum eligendi! Recusandae excepturi error perspiciatis atque perferendis.</p>
+
+<!-- 리스트 -->
+ <ul class="fisa"> <!-- unordered list -->
+    <li>사과</li>
+    <li>딸기</li>
+    <li>감</li>
+    <li>포도</li>
+ </ul>
+
+ <ol> <!-- ordered list -->
+    <li>사과</li>
+    <li>딸기</li>
+    <li>감</li>
+    <li>포도</li>
+ </ol>
+
+ <!-- 표 (table) -->
+
+ <table border="3">
+    <thead>
+        <tr> 
+            <th onmouseover="alert('클릭함!')">이름</th>
+            <th>나이</th>
+        </tr> <!-- table row-->
+    </thead>
+    <tbody>
+        <tr>
+            <td>김연지</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>김연재</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+        </tr>
+    </tbody>
+ </table>
+
+
+ <!-- 이미지 삽입 3장만 가져와주세요-->
+ <img src="data\rickandmorty.jpg" width="100px" onclick="alert('클릭함!')"/>
+ <img src="data\monster.png" width="100px" height="300px"/>
+ <img src="data\rickandmorty.jpg" height="300px"/>
+
+ <!-- 입력한대로 출력 -->
+  작성해 놓은 내용이
+ <pre>
+ 이거
+ 제
+ 가
+ 만든
+ 거에요
+
+ &lt;img src="data\jjanggu.png" width="100px"/&gt;
+ <img src="data\monster.png" width="100px" height="300px"/>
+ <img src="data\rickandmorty.jpg" height="300px"/>
+</pre>
+
+<!-- character entity는 html에서 사용되는 특수문자를 화면에 표현하기 위해 대신 사용됨 -->
+&lt; <
+&gt; >
+&amp; &
+&quot; "
+한&nbsp;&nbsp;&nbsp;&nbsp;칸&nbsp;&nbsp;&nbsp;이 상 
+
+<!-- anchor 태그부터 시작 -->
+<a href="01_html기초.html" class="fisa">링크로 가기</a>
+<a href="http://naver.com" target="_blank">네이버로 가기</a>
+<a href="http://naver.com"> <img src="data\rickandmorty.jpg" height="300px"/></a>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sGhdHmN03ME?si=RSHedzY23huV4Csw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
